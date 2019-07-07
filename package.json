@@ -1,10 +1,28 @@
 {
   "name": "lottie-scale",
   "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
   "description": "Fast and simple JS package to scale SVG Lottie animations",
   "main": "./src/index.js",
   "repository": "https://github.com/fabiofcferreira/lottie-scale",
+  "keywords": [
+    "lottie",
+    "lottie-web",
+    "javascript",
+    "scale",
+    "svg-anim"
+  ],
   "author": "Fábio Ferreira <ffcfpten@gmail.com>",
-  "license": "MIT",
-  "private": false
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ./src/*.js"
+  }
 }
