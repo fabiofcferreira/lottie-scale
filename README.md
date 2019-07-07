@@ -10,5 +10,44 @@ There are two possible ways to use Lottie Scale.
 
 ### Head `<script>` tag
 
+`<script type="text/javascript" src="https://unpkg.com/lottie-scale@1.0.0/src/index.js"></script>`
+
 ### Module import (ES6 import)
 
+```
+import * as lottieScale from 'lottie-scale'
+```
+
+### Scale SVG animation
+
+Lottie Scale can only do its magic after the DOM of the SVG animation is rendered so it's essential to add an event listener to the animation.
+
+```
+// If you're using ES6 import
+import * as lottieScale from 'lottie-scale'
+
+let el = document.querySelector('#svgContainer')
+
+const anim = lottie.loadAnimation({
+  container: el,
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'data.json', // Dataset or any other source can be used here to provide Lottie with JSON for the animation to render
+  rendererSettings: {
+    scaleMode: 'cover',
+  }
+})
+
+let svgRendered = el.querySelector('svg')
+
+anim.addEventListener('DOMLoaded', () => {
+  lottieScale(2, svgRendered)
+})
+```
+
+In this example, the SVG animation is basically "zoomed" in due to the scale being greater than 1.
+
+### Contributing
+
+Feel free to add your 2 cents via the issues or pull requests tabs.
