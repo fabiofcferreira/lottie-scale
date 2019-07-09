@@ -1,1 +1,4 @@
 node_modules
+
+# Do not stage/commit dist folder files which are automatically generated filed
+dist

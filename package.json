@@ -24,5 +24,9 @@
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint ./src/*.js"
-  }
+  },
+  "files": [
+    "dist"
+  ],
+  "unpkg": "dist/"
 }

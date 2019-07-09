@@ -1,6 +1,7 @@
-/**
+/** Copyright Notice
  * @author fabiofcferreira
- * @description Small functions scales a Lottie SVG animation
+ * @license MIT
+ * @description Small function to scale Lottie SVG animations
  * @param {Number} multiplier Scale multiplier of the size
  * @param {HTMLElement} container
  */
