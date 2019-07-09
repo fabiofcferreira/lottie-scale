@@ -28,5 +28,5 @@
   "files": [
     "dist"
   ],
-  "unpkg": "dist/"
+  "unpkg": "dist/index.min.js"
 }
