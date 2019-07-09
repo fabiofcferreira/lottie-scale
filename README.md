@@ -13,7 +13,8 @@ There are two possible ways to use Lottie Scale.
 ```
 <script type="text/javascript" src="https://unpkg.com/lottie-scale@latest/dist/index.min.js"></script>
 <!-- OR -->
-<script type="text/javascript" src="https://unpkg.com/lottie-scale@latest/dist/index.js"></script>`
+<script type="text/javascript" src="https://unpkg.com/lottie-scale@latest/dist/index.js"></script>
+```
 
 ### Module import (ES6 import)
 
