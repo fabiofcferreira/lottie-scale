@@ -50,7 +50,12 @@ anim.addEventListener('DOMContentLoaded', () => {
 })
 ```
 
-In this example, the SVG animation is basically "zoomed" in due to the scale being greater than 1.
+In this example, the SVG animation is basically zoomed 200%.
+
+Function usage
+```
+lottieScale(zoomMultiplier int, lottieObject obj)
+```
 
 ### Contributing
 
