@@ -45,7 +45,7 @@ const anim = lottie.loadAnimation({
 
 let svgRendered = el.querySelector('svg')
 
-anim.addEventListener('DOMLoaded', () => {
+anim.addEventListener('DOMContentLoaded', () => {
   lottieScale(2, svgRendered)
 })
 ```
