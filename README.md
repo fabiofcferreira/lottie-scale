@@ -26,6 +26,12 @@ import * as lottieScale from 'lottie-scale'
 
 Lottie Scale can only do its magic after the DOM of the SVG animation is rendered so it's essential to add an event listener to the animation.
 
+For now, the only function of the package is `lottieScale`:
+```
+lottieScale(zoomMultiplier int, lottieObject obj)
+```
+
+Usage example in a real case scenario:
 ```
 // If you're using ES6 import
 import * as lottieScale from 'lottie-scale'
@@ -49,13 +55,7 @@ anim.addEventListener('DOMContentLoaded', () => {
   lottieScale(2, svgRendered)
 })
 ```
-
 In this example, the SVG animation is basically zoomed 200%.
-
-Function usage
-```
-lottieScale(zoomMultiplier int, lottieObject obj)
-```
 
 ### Contributing
 
